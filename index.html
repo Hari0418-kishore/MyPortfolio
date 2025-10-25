@@ -118,7 +118,30 @@ footer{padding:28px 22px;text-align:center;color:var(--muted);font-size:0.92rem;
   .contact-grid{grid-template-columns:1fr;}
   .nav-links{display:none;}
 }
+.profile-pic-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
 
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 25px rgba(0,255,195,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0,255,195,0.25);
+}
+.hero-card {
+  margin-top: 40px; /* lowers the hero card slightly */
+}
 </style>
 </head>
 <body>
@@ -139,6 +162,7 @@ footer{padding:28px 22px;text-align:center;color:var(--muted);font-size:0.92rem;
 
 <header id="home" class="hero">
   <div class="hero-inner container">
+    
     <div class="intro">
       <h1>Designing elegant & robust web experiences — <span class="accent">I build products users love.</span></h1>
       <p>I'm <strong>Hari Kishore T M</strong>, a BCA graduate & full-stack developer. I craft modern Django apps & e-commerce solutions with smooth UI & reliable backend.</p>
@@ -160,6 +184,9 @@ footer{padding:28px 22px;text-align:center;color:var(--muted);font-size:0.92rem;
     </div>
 
     <aside class="hero-card">
+       <div class="profile-pic-box">
+    <img src="profile.png" alt="Hari Kishore T M" class="profile-pic">
+  </div>
       <h3>Quick Snapshot</h3>
       <p>BCA graduate with hands-on Django experience — hosted projects, built optical shop e-commerce & cinema booking system with admin dashboards.</p>
       <div class="hero-stats">
